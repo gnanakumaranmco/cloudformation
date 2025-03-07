@@ -1,0 +1,7 @@
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  Macro:
+    Type: AWS::CloudFormation::Macro
+    Properties:
+      Name: ExecutionRoleBuilder
+      FunctionName: arn:aws:lambda:ap-south-1:522814733729:function:lambda-cicd
