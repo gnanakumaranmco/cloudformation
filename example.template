@@ -1,10 +1,16 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: ExecutionRoleBuilder-1
+
 Resources:
-  ExecutionRoleBuilderMacroTestRole: 
+  ExecutionRoleBuilderMacroTestRole:
     Type: "AWS::IAM::Role"
-    Properties: 
-      Exeroletype: "s3,ec2,ecs,kinesis"
+    Properties:
+      Exeroletype: "s3,ec2,ecs,kinesis"   # Ensure the macro supports this
       Name: "list-checked-role-1"
       Permissions:
         - ReadWrite: "arn:aws:lambda:ap-south-1:522814733729:function:demo1"
+
+Outputs:
+  ExecutionRoleARN:
+    Description: "ARN of the created execution role"
+    Value: !GetAtt ExecutionRoleBuilderMacroTestRole.Arn
