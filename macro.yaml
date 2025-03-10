@@ -3,5 +3,5 @@ Resources:
   Macro:
     Type: AWS::CloudFormation::Macro
     Properties:
-      Name: ExecutionRoleBuilder-1
+      Name: ExecutionRoleBuilder
       FunctionName: arn:aws:lambda:ap-south-1:522814733729:function:lambda-cicd
