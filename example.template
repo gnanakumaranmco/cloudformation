@@ -7,4 +7,4 @@ Resources:
       Exeroletype: "s3,ec2,ecs,kinesis"
       Name: "list-checked-role-1"
       Permissions:
-        - ReadWrite: "arn:aws:lambda:ap-south-1:522814733729:function:demo1,arn:aws:lambda:ap-south-1:522814733729:function:demo2"
+        - ReadWrite: "arn:aws:lambda:ap-south-1:522814733729:function:demo1"
