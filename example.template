@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Transform: 522814733729::ExecutionRoleBuilder-1
+Transform: ExecutionRoleBuilder-1
 Resources:
   ExecutionRoleBuilderMacroTestRole: 
     Type: "AWS::IAM::Role"
